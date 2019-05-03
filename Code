@@ -53,4 +53,3 @@ model <- lm(stars~., data = dat, subset = train)
 pred <- predict(model, newdata = dat[test,])
 mean((pred-ytest)^2)
 summary(model)
-
